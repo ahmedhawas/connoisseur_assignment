@@ -4,11 +4,18 @@
 	<title> LCBO </title>
 </head>
 <body>
-	<% if index_called %>
-	<p><%= @ %> </p>
-
-
-
+	<% if @index_called %>
+	<p><%= @product_names %> </p>
+	<p><%= @product_prices %> </p>
+	<p><%= @categories %> </p>
+	<p><%= @image_urls %> </p>
+	<% end %>
+	<% if @show_called %>
+	<p><%= @name %> </p>
+	<p><%= @price %> </p>
+	<p><%= @category %> </p>
+	<img src= <%= @image_url %> alt="Cannot be displayed">
+	<% end %>
 </body>		
 
 </html>
