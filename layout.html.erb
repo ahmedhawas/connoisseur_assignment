@@ -101,12 +101,6 @@
 	            </h5>
 	          </div>
 	 
-	          <a href="#">
-	          <div class="panel callout radius">
-	            <h6>99&nbsp; items in your cart</h6>
-	          </div>
-	          </a>
-	 
 	        </div>
 	 
 	    <!-- End Side Bar -->
@@ -188,7 +182,7 @@
 	                  <div class="large-10 small-6 columns">
 	                    <strong>This Site Is Managed By<hr/></strong>
 	 
-	                    Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
+	                    Jon Carr-Harris and Ahmed Hawas
 	                  </div>
 	 
 	                </div>
@@ -214,10 +208,8 @@
 	 
 	            <div class="large-6 columns">
 	              <ul class="inline-list right">
-	                <li><a href="#">Link 1</a></li>
-	                <li><a href="#">Link 2</a></li>
-	                <li><a href="#">Link 3</a></li>
-	                <li><a href="#">Link 4</a></li>
+	                <li><a href="#">Terms of Service</a></li>
+	                <li><a href="#">Privacy Policy</a></li>
 	              </ul>
 	            </div>
 	 
@@ -252,19 +244,3 @@
 	  <script>
 	    $(document).foundation();
 	  </script>
-
-</body>
-</html>
-
-<% if @index_called %>
-<p><%= @product_names %> </p>
-<p><%= @product_prices %> </p>
-<p><%= @categories %> </p>
-<p><%= @image_urls %> </p>
-<% end %>
-<% if @show_called %>
-<p><%= @name %> </p>
-<p><%= @price %> </p>
-<p><%= @category %> </p>
-<img src= <%= @image_url %> alt="Cannot be displayed">
-<% end %>

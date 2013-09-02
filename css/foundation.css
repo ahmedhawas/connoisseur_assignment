@@ -2901,13 +2901,13 @@ label.error {
     width: 100%;
     height: auto;
     display: block;
-    background: #222222;
+    background: #FFFFFF;
     font-size: 16;
     margin: 0; }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
     border-bottom: solid 1px #2b2b2b;
-    border-top: solid 1px black;
+    border-top: solid 1px white;
     clear: both;
     height: 1px;
     width: 100%; }
@@ -2919,7 +2919,7 @@ label.error {
     padding-left: 15px;
     font-size: 0.8125em;
     font-weight: bold;
-    background: #222222; }
+    background: #ffffff; }
     .top-bar-section ul li > a.button {
       background: #2ba6cb;
       font-size: 0.8125em; }
@@ -2953,7 +2953,7 @@ label.error {
       width: 0;
       height: 0;
       border: inset 5px;
-      border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+      border-color: transparent transparent transparent #A5CA26;
       border-left-style: solid;
       margin-right: 15px;
       margin-top: -4.5px;
@@ -3001,7 +3001,7 @@ label.error {
 
 @media only screen and (min-width: 58.75em) {
   .top-bar {
-    background: #111111;
+    background: #A5CA26;;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -3024,7 +3024,7 @@ label.error {
       position: relative;
       top: 8px; }
     .top-bar.expanded {
-      background: #111111; }
+      background: #A5CA26;; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;
@@ -3047,9 +3047,9 @@ label.error {
     .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #111111; }
+      background: #A5CA26; }
       .top-bar-section li a:not(.button).hover {
-        background: black; }
+        background: white; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -3058,7 +3058,7 @@ label.error {
         width: 0;
         height: 0;
         border: inset 5px;
-        border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
+        border-color: #A5CA26 transparent transparent transparent;
         border-top-style: solid;
         margin-top: -2.5px;
         top: 22.5px; }
@@ -3083,10 +3083,10 @@ label.error {
         line-height: 1;
         white-space: nowrap;
         padding: 7px 15px;
-        background: #1e1e1e; }
+        background: #A5CA26; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #1e1e1e; }
+        background: #f5f5f5; }
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
@@ -3094,7 +3094,7 @@ label.error {
       border-bottom: none;
       border-top: none;
       border-right: solid 1px #2b2b2b;
-      border-left: solid 1px black;
+      border-left: solid 1px white;
       clear: none;
       height: 45px;
       width: 0px; }
@@ -3927,7 +3927,7 @@ form.custom {
       width: 0;
       height: 0;
       border: inset 5px;
-      border-color: #222222 transparent transparent transparent;
+      border-color: #FFFFFF transparent transparent transparent;
       border-top-style: solid; }
     form.custom .custom.dropdown .disabled {
       color: #888888; }
