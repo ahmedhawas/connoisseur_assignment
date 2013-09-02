@@ -107,65 +107,42 @@
 	 
 	 
 	    <!-- Thumbnails -->
-	 
-	        <div class="large-8 columns">
+	    	        <div class="large-8 columns">
 	          <div class="row">
-	 
+	          	<% if @index_called %>
+	          	<% for i in 0..@product_names.length-1%>
+	          	<% if @image_urls[i] != nil%>
+
 	            <div class="large-4 small-6 columns">
-	              <img src="http://placehold.it/1000x1000&text=Thumbnail">
+	              <img src= <%=@image_urls[i]%> >
 	 
 	              <div class="panel">
-	                <h5>Item Name</h5>
-	                <h6 class="subheader">$000.00</h6>
+	                <h5> <%= @product_names[i] %> </h5>
+	                <h6 class="subheader"> <%= @categories[i] %> </h6>
+	                <h6 class="subheader"> $ <%= @product_prices[i].to_f/100 %> </h6>
 	              </div>
 	            </div>
-	 
+	            <% end %>
+	            <% end %>
+	            <% end %>
+
+	            <% if @show_called %>
 	            <div class="large-4 small-6 columns">
-	              <img src="http://placehold.it/500x500&text=Thumbnail">
+	              <img src= <%=@image_url%> >
 	 
 	              <div class="panel">
-	                <h5>Item Name</h5>
-	                <h6 class="subheader">$000.00</h6>
+	                <h5> <%= @name %> </h5>
+	                <h6 class="subheader"> <%= @category %> </h6>
+	                <h6 class="subheader"> $ <%= @price.to_f/100 %> </h6>
 	              </div>
 	            </div>
+	            <% end %>
+
+	        </div>    
+
+	        </div>
 	 
-	            <div class="large-4 small-6 columns">
-	              <img src="http://placehold.it/500x500&text=Thumbnail">
-	 
-	              <div class="panel">
-	                <h5>Item Name</h5>
-	                <h6 class="subheader">$000.00</h6>
-	              </div>
-	            </div>
-	 
-	            <div class="large-4 small-6 columns">
-	              <img src="http://placehold.it/500x500&text=Thumbnail">
-	 
-	              <div class="panel">
-	                <h5>Item Name</h5>
-	                <h6 class="subheader">$000.00</h6>
-	              </div>
-	            </div>
-	 
-	            <div class="large-4 small-6 columns">
-	              <img src="http://placehold.it/500x500&text=Thumbnail">
-	 
-	              <div class="panel">
-	                <h5>Item Name</h5>
-	                <h6 class="subheader">$000.00</h6>
-	              </div>
-	            </div>
-	 
-	            <div class="large-4 small-6 columns">
-	              <img src="http://placehold.it/500x500&text=Thumbnail">
-	 
-	              <div class="panel">
-	                <h5>Item Name</h5>
-	                <h6 class="subheader">$000.00</h6>
-	              </div>
-	            </div>
-	          </div>
-	 
+
 	    <!-- End Thumbnails -->
 	 
 	 
